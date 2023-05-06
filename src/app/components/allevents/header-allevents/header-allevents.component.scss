@@ -1,0 +1,38 @@
+.imgHolder {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../../../assets/mixerpng.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // position: fixed;
+    .colorOverlay {
+        background-color: transparent;
+        filter: invert(98%) sepia(0%) saturate(100%) hue-rotate(130deg) brightness(150%) contrast(30%);
+
+        // background-image: linear-gradient(180deg, #000000 0%, #951933 100%);
+        opacity: 0.5;
+        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+        height: 100%;
+        width: 100%;
+    }
+    .titleHolder {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: rgba(149,25,51,0.67);
+        width: 22%;
+        height: 15vh;
+        position: relative;
+        bottom: 15vh;
+        left: 500px;
+        opacity: 0.5;
+        div {
+            color: white;
+            position: relative;
+            bottom: 2vh;
+            left: 2em;
+            font-size: 20px;
+        }
+    };
+   
+}

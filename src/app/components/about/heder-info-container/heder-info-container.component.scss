@@ -1,0 +1,51 @@
+.imgHolder {
+    height: 120vh;
+    width: 100%;
+    background: url(../../../../assets/audience.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // position: fixed;
+    z-index: 10;
+    .colorOverlay {
+        background-image: linear-gradient(180deg, #000000 0%, #055394 100%);
+        opacity: 0.5;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+
+    }
+    .titleHolder {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: rgba(5,83,148,0.45);
+        padding: 50px;
+
+        width: 30%;
+        height: 60vh;
+        position: relative;
+        bottom: 60vh;
+        left: 500px;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            
+            color: white;
+            position: relative;
+            bottom: 2vh;
+            h1 {
+                margin-bottom: 20px;
+                font-size: 40px;
+
+            }
+            p {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-size: 18px;
+                text-align: start;
+            }
+        }
+    };
+   
+}
