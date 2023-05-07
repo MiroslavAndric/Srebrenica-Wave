@@ -1,76 +1,75 @@
+@import '../../../../assets/scss/variables';
+@import '../../../../assets/scss/mixins';
 .titleHolder {
-    width: 100%;
+    width: $width-full;
     height: 10vh;
-    background-color: #75400a;
+    background-color: $color-orange-2;
     div {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        display: $display-flex;
+        justify-content: $justify-content-S-A;
+        align-items: $align-items-c;
         h1 {
-            font-size: 45px;
+            font-size: $font-size-xl;
             line-height: 2.4em;
             letter-spacing: 1.2px;
-            color: white;
+            color: $color-white-regular;
         }
 
 }
 }
 .descriptionTab {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color:#222329 ;
+    display: $display-flex;
+    flex-direction: $flex-direction-c;
+    justify-content: $justify-content-c;
+    align-items: $align-items-c;
+    width: $width-full;
+    background-color:$color-white-gray ;
     padding: 2em 0em;
 
     p {
-        display: flex;
-        width: 50%;
-        text-align: center; 
+        display: $display-flex;
+        width: $width-half;
+        text-align: $text-align-c; 
         margin-bottom: 1em;
-        color: white;
-        font-size: 18px;
+        color: $color-white-regular;
+        font-size: $font-size-m;
 
         
     }
 }
 .additionalInfo {
-    width: 100%;
-    background-color: #75400a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: $width-full;
+    background-color: $color-orange-2;
+    display: $display-flex;
+    align-items: $align-items-c;
+    justify-content: $justify-content-c;
     padding:5em 0em;
     
     div {
-        display: flex;
-        flex-direction: column;
-        width: 20%;
-        background-color: #222329;
+        display: $display-flex;
+        flex-direction: $flex-direction-c;
+        width: 25%;
+        background-color: $color-white-gray;
          padding: 30px 60px 30px 60px;
-         height: 55vh;
+         height: 45vh;
 
         h1 {
-            font-size: 45px;
+            font-size: $font-size-xl;
             line-height: 2.4em;
             letter-spacing: 1.2px;
-            color: white;
+            color: $color-white-regular;
             margin-top: 1em;
         }
         h2 {
-            color: white;
-            padding-bottom: 1em;
+            margin-bottom: 1em;
+            color: $color-white-regular;
         }
         p {
 
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 18px;
-        }
-        .imgHolder {
-            margin-bottom: 100px;
+            justify-content: $justify-content-c;
+            align-items: $align-items-c;
+            color: $color-white-regular;
+            font-size: $font-size-m;
         }
     }
 }

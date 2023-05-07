@@ -1,16 +1,17 @@
+@import '../../../../assets/scss/variables';
+@import '../../../../assets/scss/mixins';
 .titleHolder {
-    width: 100%;
-    height: 10vh;
-    background-color: #6B152B;
+    width: $width-full;
+    background-color: $color-red-1;
     div {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        display: $display-flex;
+        justify-content: $justify-content-S-A;
+        align-items: $align-items-c;
         h1 {
-            font-size: 45px;
+            font-size: $font-size-xl;
             line-height: 2.4em;
             letter-spacing: 1.2px;
-            color: white;
+            color: $color-white-regular;
         }
 
 }
@@ -30,4 +31,19 @@
         border: 2px solid #6B152B ;
     }
     
+}
+.previousEvents {
+    width: $width-full;
+    background-color: $color-red-1;    
+    div {
+        display: $display-flex;
+        justify-content: $justify-content-S-A;
+        align-items: $align-items-c;
+        h1 {
+            font-size: $font-size-xl;
+            line-height: 2.4em;
+            letter-spacing: 1.2px;
+            color: $color-white-regular;
+        }
+    }
 }

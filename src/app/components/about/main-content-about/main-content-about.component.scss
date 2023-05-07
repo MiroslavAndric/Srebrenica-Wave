@@ -1,63 +1,65 @@
+@import '../../../../assets/scss/variables';
+@import '../../../../assets/scss/mixins';
 .mainContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: $display-flex;
+    flex-direction: $flex-direction-c;
+    align-items: $align-items-c;
     padding: 5em;
-    color:  #595858;
+    color:  $color-white-gray;
     h1 {
-        font-size: 45px;
+        font-size: $font-size-xl;
     }
     p {
-    border: 5px outset #595858 ;
+    border: 5px solid $color-white-gray ;
+    border-radius: $border-radius-20px;
 
-        width: 75%;
+        width: $width-3Q;
         margin: 20px 0px;
-        text-align: center;
-        font-size: 18px;
+        text-align: $text-align-c;
+        font-size: $font-size-m;
         padding: 1em 10em;
     }
 }
 .additionalInfo, .additionalInfoII {
-    width: 100%;
-    background-color: #055394;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: $width-full;
+    background-color: $color-blue-2;
+    display: $display-flex;
+    align-items: $align-items-c;
+    justify-content: $justify-content-c;
     padding:5em 0em;
     
     div {
-        display: flex;
-        flex-direction: column;
+        display: $display-flex;
+        flex-direction: $flex-direction-c;
         width: 35%;
-        background-color: #222329;
+        background-color: $color-white-gray;
          padding: 30px 60px 30px 60px;
-         border-radius: 20px;
-        //  height: 55vh;
-        min-height: 35vh;
-        margin-left: 1em;
+         border-radius: $border-radius-20px;
+            min-height: 35vh;
+            margin-left: 1em;
 
         h1 {
-            text-align: center;
-            font-size: 45px;
+            text-align: $text-align-c;
+            font-size: $font-size-xl;
             line-height: 2.4em;
             letter-spacing: 1.2px;
-            color: white;
+            color: $color-white-regular;
             margin-top: 1em;
         }
         p, ul, li {
             list-style-type: none;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 18px;
+            text-align: $text-align-c;
+            justify-content: $justify-content-c;
+            align-items: $align-items-c;
+            color: $color-white-regular;
+            font-size: $font-size-m;
         }
       
     }
 }
 .arrowDown {
-    text-align: center;
-    font-size: 5em;
-    background-color: #222329;
-    color: white;
+    text-align: $text-align-c;
+    font-size: $font-size-xl;
+    background-color: $color-white-gray;
+    color: $color-white-regular;
 }

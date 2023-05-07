@@ -1,49 +1,49 @@
+@import '../../../../assets/scss/variables';
+@import '../../../../assets/scss/mixins';
 .imgHolder {
-    height: 120vh;
-    width: 100%;
+    height: $height-110vh;
+    width: $width-full;
     background: url(../../../../assets/audience.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    // position: fixed;
+    background-repeat: $background-repeat-no;
+    background-size: $background-size-c;
     z-index: 10;
     .colorOverlay {
         background-image: linear-gradient(180deg, #000000 0%, #055394 100%);
         opacity: 0.5;
         height: 100%;
-        width: 100%;
+        width: $width-full;
         z-index: 0;
 
     }
     .titleHolder {
-        display: flex;
-        align-items: center;
+        display: $display-flex;
+        align-items: $align-items-c;
         justify-content: flex-start;
-        background-color: rgba(5,83,148,0.45);
-        padding: 50px;
+        background-color: $color-blue-a;
+        padding: $padding-top-l;
 
-        width: 30%;
+        width: $width-30;
         height: 60vh;
         position: relative;
         bottom: 60vh;
         left: 500px;
         div {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
+            display: $display-flex;
+            flex-direction: $flex-direction-c;
+            align-items: $align-items-s;
             
-            color: white;
+            color: $color-white-regular;
             position: relative;
             bottom: 2vh;
             h1 {
                 margin-bottom: 20px;
-                font-size: 40px;
+                font-size: $font-size-xl;
 
             }
             p {
-                margin-top: 20px;
-                margin-bottom: 20px;
-                font-size: 18px;
-                text-align: start;
+                margin-top: $margin-top-m;
+                font-size: $font-size-m;
+                text-align: $align-items-s;
             }
         }
     };

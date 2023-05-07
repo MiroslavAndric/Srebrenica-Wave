@@ -1,10 +1,14 @@
 $color-white-regular: #ffffff;
+$color-white-gray: #222329;
+$color-blue-a:#05539473;
 $color-blue-1: #1085e4;
 $color-blue-2: #055394;
 $color-red-1: #951933;
 $color-red-2: #F4A5A8;
+$color-red-a: #95193380;
 $color-orange-1: #ca5c10;
 $color-orange-2: #89410e;
+$color-orange-a:#75400a80;
 
 
 
@@ -19,10 +23,16 @@ $font-weight-bold: bold;
 $line-height-m: 20px;
 
 $border-radius-5px: 5px;
+$border-radius-20px: 20px;
 
 $height-95vh: 95vh;
+$height-100vh: 100vh;
+$height-110vh: 110vh;
 
+$width-30: 30%;
 $width-half: 50%;
+$width-full: 100%;
+$width-3Q: 75%;
 
 $margin-top-m: 20px;
 $margin-top-xl: 350px;
@@ -36,6 +46,7 @@ $display-flex: flex;
 $flex-direction-c: column;
 
 $align-items-c: center;
+$align-items-s: start;
 $text-align-c: center;
 
 $justify-content-c: center;
