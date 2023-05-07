@@ -1,12 +1,11 @@
 .header {
     position: fixed;
-    box-shadow: 20px -1px 12px 5px grey;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     background-color: transparent;
     color: white;
-    margin-top:25px;
+    padding:20px 0px;
     z-index: 999;
     a {
         cursor: pointer;
@@ -42,4 +41,8 @@
         }
     }
 
+}
+.navbar-inverse {
+    background-color: rgba(0,0,0,0.4);
+    z-index: 5;
 }

@@ -1,13 +1,9 @@
 @import '../../../../assets/scss/variables';
 @import '../../../../assets/scss/mixins';
 .inputs {
-    display: $display-flex;
-    flex-direction: $flex-direction-c;
-    align-items: $align-items-c;
+    @include display-direction-align($display-flex, $flex-direction-c, $align-items-c);
+    @include bck-repeat-bck-size-and-height($background-repeat-no, $background-size-c, $height-95vh);
     background-color:#062A52 ;
-    background-repeat: $background-repeat-no;
-    background-size: $background-size-c;
-    height: $height-95vh;
     background-position: center;
     user-select: none;
     h1 {
@@ -28,13 +24,10 @@
         border: 2px solid white;
     }
     .allEvents {
+        @include weight-lineHeight-bckColor($font-weight-m, $line-height-m, transparent);
         border-radius: 26px;
         padding: 15px 30px;
-        font-size: $font-size-m;
-        font-weight: $font-weight-m;
-        line-height: $line-height-m;
-        color: $color-white-regular;
-        background-color:transparent;
+        @include font-size-and-color($font-size-m, $color-white-regular);
         border: 2px dashed white;
         margin-top: 20px;
         cursor: pointer;

@@ -1,28 +1,22 @@
 @import '../../../../assets/scss/variables';
 @import '../../../../assets/scss/mixins';
 .aboutFest {
-    display: $display-flex;
-    flex-direction: $flex-direction-c;
-    align-items: $align-items-c;
+    @include display-direction-align($display-flex, $flex-direction-c, $align-items-c);
     justify-content: $justify-content-c;
     background-image: url(../../../../assets/band_audience.jpg);
-    background-repeat: $background-repeat-no;
-    background-size: $background-size-c;
-    height: $height-95vh;
+    @include bck-repeat-bck-size-and-height($background-repeat-no, $background-size-c, $height-95vh);
     h1 {
-        font-size: $font-size-xl;
-        color: $color-white-regular;
+        @include font-size-and-color($font-size-xl, $color-white-regular);
         span {
             color: $color-orange-1;
         }
     }
     p {
-        font-size: $font-size-m;
+        @include font-size-and-color($font-size-m, $color-white-regular);
         margin-top: $margin-top-m;
         width: $width-half;
-        align-items: $align-items-c;
-        text-align: $text-align-c;
-        color: $color-white-regular;
+        @include items-and-text-align($align-items-c, $text-align-c);
+        // color: $color-white-regular;
     }
     div {
         display: $display-flex;
@@ -34,28 +28,20 @@
         border-radius: $border-radius-5px;
         cursor: pointer;
         &.__more {
-            font-size: $font-size-m;
-            font-weight: $font-weight-m;
-            line-height: $line-height-m;
-            color: $color-white-regular;
-            background-color: $color-orange-2;
+            @include font-size-and-color($font-size-m, $color-white-regular);
+            @include weight-lineHeight-bckColor($font-weight-m, $line-height-m, $color-orange-2);
             padding: $padding-button;
             &:hover {
-                background-color: $color-orange-1;
-                font-weight: $font-weight-bold;
+                @include weight-lineHeight-bckColor($font-weight-bold, normal, $color-orange-1);
                 }
         }
         &.__perform {
             margin-left: $margin-left-m;
-            font-size: $font-size-m;
-            font-weight: $font-weight-m;
-            line-height: $line-height-m;
-            color: $color-white-regular;
-            background-color: $color-orange-1;
+            @include font-size-and-color($font-size-m, $color-white-regular);
+            @include weight-lineHeight-bckColor($font-weight-m, $line-height-m, $color-orange-1);
             padding: $padding-button;
             &:hover {
-                background-color: $color-orange-2;
-                font-weight: $font-weight-bold;
+                @include weight-lineHeight-bckColor($font-weight-bold, normal, $color-orange-2);
                 }
         }
         

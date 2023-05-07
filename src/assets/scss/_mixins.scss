@@ -1,0 +1,24 @@
+@mixin font-size-and-color($font-size, $color ) {
+    font-size: $font-size;
+    color: $color;
+};
+
+@mixin display-direction-align($display, $direction, $align-items) {
+    display: $display;
+    flex-direction: $direction;
+    align-items: $align-items;
+}
+@mixin bck-repeat-bck-size-and-height($bck-repeat, $bck-size, $height) {
+    background-repeat: $bck-repeat;
+    background-size: $bck-size;
+    height: $height;
+}
+@mixin weight-lineHeight-bckColor($font-weight, $line-height, $background-color) {
+    font-weight: $font-weight;
+    line-height: $line-height;
+    background-color: $background-color
+}  
+@mixin items-and-text-align ($align-items, $text-align) {
+    align-items: $align-items;
+    text-align: $text-align;
+}
