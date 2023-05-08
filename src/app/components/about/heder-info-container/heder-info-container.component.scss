@@ -7,11 +7,8 @@
     z-index: 10;
     .colorOverlay {
         background-image: linear-gradient(180deg, #000000 0%, #055394 100%);
-        opacity: 0.5;
-        height: 100%;
-        width: $width-full;
+        @include opacity-height-width($opacity-half, $height-full, $width-full);
         z-index: 0;
-
     }
     .titleHolder {
         @include display-align-justify($display-flex, $align-items-c, flex-start);

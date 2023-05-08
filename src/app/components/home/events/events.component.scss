@@ -31,11 +31,24 @@
         border: 2px dashed white;
         margin-top: 20px;
         cursor: pointer;
-        &:hover {
+        --clr: white;
+  --outline: 2px solid var(--clr);
+  color: var(--clr);
+  outline: var(--outline);
+  border: var(--outline);
+  outline-offset: -2px;
+  transition: outline-offset 200ms ease;
+        &:hover:focus {
             background-color:#4C1023;
+            // outline-offset: -2px;
+            // transition: outline-offset 200ms ease;
+            outline: var(--outline);
+  outline-offset: 2px;
         }
-        img {
+        &:hover::after {
+           
 
         }
+       
     }
 }

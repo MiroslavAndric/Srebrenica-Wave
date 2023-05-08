@@ -40,3 +40,8 @@
     letter-spacing: $letter-spacing;
     color: $color;
 }
+@mixin opacity-height-width($opacity, $height, $width) {
+    opacity: $opacity;
+    height: $height;
+    width: $width;
+}
