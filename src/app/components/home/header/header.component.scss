@@ -35,7 +35,25 @@
                 top: 6px;
                 &:hover {
                     font-size: 18px;
+                    color:white;
                 }
+                &::after {
+                    content: '';
+                    height: 3px;
+                    background-color: white;
+                    opacity: 0;
+                    position:absolute;
+                    left: 0;
+                    bottom: -5px;
+                    width: 100%;
+                    transition:  all ease-in-out 300ms;
+                    transform: scaleX(0);
+                }
+                &:hover::after {
+                    opacity: 1;
+                    transform: scaleX(1);
+                }
+              
             }
 
         }

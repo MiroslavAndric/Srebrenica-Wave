@@ -1,18 +1,15 @@
 @import '../../../../assets/scss/variables';
 @import '../../../../assets/scss/mixins';
 .mainContent {
-    display: $display-flex;
-    flex-direction: $flex-direction-c;
-    align-items: $align-items-c;
+    @include display-direction-align($display-flex,$flex-direction-c, $align-items-c);
     padding: 5em;
     color:  $color-white-gray;
     h1 {
         font-size: $font-size-xl;
     }
     p {
-    border: 5px solid $color-white-gray ;
-    border-radius: $border-radius-20px;
-
+        border: 5px solid $color-white-gray ;
+        border-radius: $border-radius-20px;
         width: $width-3Q;
         margin: 20px 0px;
         text-align: $text-align-c;
@@ -23,9 +20,7 @@
 .additionalInfo, .additionalInfoII {
     width: $width-full;
     background-color: $color-blue-2;
-    display: $display-flex;
-    align-items: $align-items-c;
-    justify-content: $justify-content-c;
+    @include display-align-justify($display-flex, $align-items-c, $justify-content-c);
     padding:5em 0em;
     
     div {
@@ -33,33 +28,40 @@
         flex-direction: $flex-direction-c;
         width: 35%;
         background-color: $color-white-gray;
-         padding: 30px 60px 30px 60px;
-         border-radius: $border-radius-20px;
-            min-height: 35vh;
-            margin-left: 1em;
+        padding: 30px 60px 30px 60px;
+        border-radius: $border-radius-20px;
+        min-height: 35vh;
+        margin-left: 1em;
 
         h1 {
+            @include font-lineH-letterS-color($font-size-xl, 2.4em, 1.2px, $color-white-regular);
             text-align: $text-align-c;
-            font-size: $font-size-xl;
-            line-height: 2.4em;
-            letter-spacing: 1.2px;
-            color: $color-white-regular;
             margin-top: 1em;
         }
         p, ul, li {
             list-style-type: none;
-            text-align: $text-align-c;
+            @include items-and-text-align($align-items-c, $text-align-c);
             justify-content: $justify-content-c;
-            align-items: $align-items-c;
-            color: $color-white-regular;
-            font-size: $font-size-m;
+            @include font-size-and-color($font-size-m, $color-white-regular);
         }
       
     }
 }
-.arrowDown {
-    text-align: $text-align-c;
-    font-size: $font-size-xl;
-    background-color: $color-white-gray;
-    color: $color-white-regular;
-}
+
+.arrowAnim {
+    width: 100vw;
+    @include display-align-justify($display-flex, $align-items-c, $justify-content-c);
+    .arrowSliding {
+        position: absolute;
+        animation: slide 3s linear infinite;
+        .arrow {
+            @include font-size-and-color(50px, $color-white-regular);
+          }
+      }
+    @keyframes slide {
+        0% { opacity:0; transform: translateY(-4vw); }	
+       20% { opacity:1; transform: translateY(-2vw); }	
+       80% { opacity:1; transform: translateY(4vw); }	
+      100% { opacity:0; transform: translateY(6vh); }	
+    }
+  }

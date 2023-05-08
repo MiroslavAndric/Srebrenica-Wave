@@ -13,7 +13,7 @@
     img {
         filter: invert(98%) sepia(0%) saturate(100%) hue-rotate(130deg) brightness(150%) contrast(30%);
         position: relative;
-        top: 130px;
+        top: 60px;
     }
     .singleInput {
         border-radius: $border-radius-5px;
@@ -33,6 +33,9 @@
         cursor: pointer;
         &:hover {
             background-color:#4C1023;
+        }
+        img {
+
         }
     }
 }

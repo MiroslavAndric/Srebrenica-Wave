@@ -1,11 +1,9 @@
 @import '../../../../assets/scss/variables';
 @import '../../../../assets/scss/mixins';
 .imgHolder {
-    height: $height-110vh;
     width: $width-full;
     background: url(../../../../assets/audience.jpg);
-    background-repeat: $background-repeat-no;
-    background-size: $background-size-c;
+    @include bck-repeat-bck-size-and-height($background-repeat-no, $background-size-c, $height-100vh);
     z-index: 10;
     .colorOverlay {
         background-image: linear-gradient(180deg, #000000 0%, #055394 100%);
@@ -16,22 +14,13 @@
 
     }
     .titleHolder {
-        display: $display-flex;
-        align-items: $align-items-c;
-        justify-content: flex-start;
+        @include display-align-justify($display-flex, $align-items-c, flex-start);
         background-color: $color-blue-a;
         padding: $padding-top-l;
-
-        width: $width-30;
-        height: 60vh;
-        position: relative;
-        bottom: 60vh;
-        left: 500px;
+        border-radius: $border-radius-title-holder;
+        @include width-height-pos-bott-left($width-30,60vh, relative, 60vh, 300px);
         div {
-            display: $display-flex;
-            flex-direction: $flex-direction-c;
-            align-items: $align-items-s;
-            
+            @include display-direction-align($display-flex, $flex-direction-c, $align-items-s);
             color: $color-white-regular;
             position: relative;
             bottom: 2vh;

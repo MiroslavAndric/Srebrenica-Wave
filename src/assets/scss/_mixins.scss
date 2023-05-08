@@ -22,3 +22,21 @@
     align-items: $align-items;
     text-align: $text-align;
 }
+@mixin display-align-justify ($display, $align, $justify) {
+    display: $display;
+    align-items: $align;
+    justify-content: $justify;
+}
+@mixin width-height-pos-bott-left($width, $height, $position, $bottom, $left) {
+    width: $width;
+    height: $height;
+    position: $position;
+    bottom: $bottom;
+    left: $left;
+}
+@mixin font-lineH-letterS-color($font-size, $line-heigh, $letter-spacing, $color) {
+    font-size: $font-size;
+    line-height: $line-heigh;
+    letter-spacing: $letter-spacing;
+    color: $color;
+}
