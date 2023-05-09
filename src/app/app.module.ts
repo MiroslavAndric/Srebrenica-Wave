@@ -30,7 +30,7 @@ import MainContentAlleventsComponent from './components/allevents/main-content-a
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 import { PerformInPivnicaComponent } from './components/perform-in-pivnica/perform-in-pivnica.component';
 import { BookPivnicaComponent } from './components/book-pivnica/book-pivnica.component';
-
+import { FormsModule } from '@angular/forms';
 const routes: Routes = [
   {
     path: '',
@@ -109,7 +109,8 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})
+    RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'}),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
