@@ -45,3 +45,25 @@
     height: $height;
     width: $width;
 }
+@mixin buttons {
+    @include weight-lineHeight-bckColor($font-weight-m, $line-height-m, transparent);
+    border-radius: 26px;
+    padding: 15px 30px;
+    @include font-size-and-color($font-size-m, $color-white-regular);
+    margin-top: 20px;
+    margin-left:5px;
+    cursor: pointer;
+    --clr: white;
+    --outline: 2px solid var(--clr);
+    color: var(--clr);
+    outline: var(--outline);
+    border: var(--outline);
+    outline-offset: -2px;
+    transition: outline-offset 200ms ease;
+}
+@mixin buttonHover ($bckColor) {
+    background-color: $bckColor;
+    outline: var(--outline);
+    outline-offset: 2px;
+    font-weight: bold;
+}

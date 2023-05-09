@@ -4,22 +4,14 @@
     width: $width-full;
     background-color: $color-red-1;
     div {
-        display: $display-flex;
-        justify-content: $justify-content-S-A;
-        align-items: $align-items-c;
+        @include display-align-justify($display-flex, $align-items-c, $justify-content-S-A);
         h1 {
-            font-size: $font-size-xl;
-            line-height: 2.4em;
-            letter-spacing: 1.2px;
-            color: $color-white-regular;
-        }
-
-}
-}
+            @include font-lineH-letterS-color($font-size-xl, 2.4em, 1.2px, $color-white-regular);
+        };
+    };
+};
 .inputs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include display-direction-align($display-flex, $flex-direction-c, $align-items-c);
     background-color:white ;
     margin-bottom: 3em;
 
@@ -29,21 +21,16 @@
         height: 30px;
         color: #6B152B ;
         border: 2px solid #6B152B ;
-    }
+    };
     
-}
+};
 .previousEvents {
     width: $width-full;
     background-color: $color-red-1;    
     div {
-        display: $display-flex;
-        justify-content: $justify-content-S-A;
-        align-items: $align-items-c;
+        @include display-align-justify($display-flex, $align-items-c, $justify-content-S-A);
         h1 {
-            font-size: $font-size-xl;
-            line-height: 2.4em;
-            letter-spacing: 1.2px;
-            color: $color-white-regular;
-        }
-    }
-}
+            @include font-lineH-letterS-color($font-size-xl, 2.4em, 1.2px, $color-white-regular);
+        };
+    };
+};

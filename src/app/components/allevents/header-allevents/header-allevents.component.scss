@@ -1,27 +1,19 @@
 @import '../../../../assets/scss/variables';
 @import '../../../../assets/scss/mixins';
 .imgHolder {
-    height: $height-100vh;
+    @include bck-repeat-bck-size-and-height($background-repeat-no, $background-size-c, $height-100vh);
     width: $width-full;
     background-image: url(../../../../assets/mixerpng.png);
-    background-repeat: $background-repeat-no;
-    background-size: $background-size-c;
     .colorOverlay {
         background-color: transparent;
         filter: invert(98%) sepia(0%) saturate(100%) hue-rotate(130deg) brightness(150%) contrast(30%);
-        opacity: 0.5;
-        height: 100%;
-        width: 100%;
-    }
+        @include opacity-height-width(0.5, $height-full, $width-full);
+    };
     .titleHolder {
+        @include width-height-pos-bott-left($width-22, $height-15vh, relative, 15vh, 490px);
         display: $display-flex;
         align-items: $align-items-c;
         background-color: $color-red-a;
-        width: 22%;
-        height: 15vh;
-        position: relative;
-        bottom: 15vh;
-        left: 500px;
         div {
             color: $color-white-regular;
             position: relative;

@@ -10,41 +10,39 @@
 
         span {
             color:$color-red-1;
-        }
-    }
+        };
+    };
     p {
         @include font-size-and-color($font-size-m, $color-white-regular);
         margin-top: $margin-top-m;
         width: $width-half;
         @include items-and-text-align($align-items-c, $text-align-c);
-    }
+    };
     div {
         display: $display-flex;
         justify-content: $justify-content-S-A;
         padding-top: $padding-top-l;
 
-    }
+    };
     button {
-        border-radius: $border-radius-5px;
         cursor: pointer;
         &.__more {
-            @include font-size-and-color($font-size-m, $color-white-regular);
-            @include weight-lineHeight-bckColor($font-weight-m, $line-height-m, $color-red-1);
-            padding: $padding-button;
+            @include buttons;
+
+            
             &:hover {
-            @include weight-lineHeight-bckColor($font-weight-bold, normal $line-height-m, $color-red-2);
-            }
-        }
+                @include buttonHover ($color-red-1);
+        };
+    };
         &.__book {
-            @include font-size-and-color($font-size-m,$color-white-regular);
-            margin-left: $margin-left-m;
-            @include weight-lineHeight-bckColor($font-weight-m,$line-height-m, $color-red-2);
-            padding: $padding-button;
+            @include buttons;
+
             &:hover {
-            @include weight-lineHeight-bckColor($font-weight-bold, normal $line-height-m, $color-red-1);
-            }
-        }
+                @include buttonHover ($color-red-2);
+
+        };
         
-    }
+      };
     
-}
+    };
+};

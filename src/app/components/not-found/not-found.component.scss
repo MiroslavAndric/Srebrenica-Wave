@@ -21,7 +21,7 @@ body{
   align-items: center;
   font-family: "Poppins", sans-serif;
   position: relative;
-  left:6vmin;
+  // left:6vmin;
   text-align: center;
 }
 
@@ -124,22 +124,31 @@ h1{
   font-family: "Montserrat", sans-serif;
   position: absolute;
   bottom:15vmin;
-  padding:3vmin 12vmin 3vmin 3vmin;
+  margin: auto;
   font-weight:600;
   color:#092532;
+  font-size: 30px;
 }
 
 .goHome {
     position: relative;
-    left:45%;
+    margin: auto;
+    // left:45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 15px 10px;
     background-color:#4F8A8B;
     font-size: 20px;
     border-radius: 10px;
     cursor: pointer;
+    margin-bottom: 72px;
     a {
         text-decoration: none;
         color: #F3C623;
+        &:hover {
+          font-weight: bold;
+        }
 
     }
 }

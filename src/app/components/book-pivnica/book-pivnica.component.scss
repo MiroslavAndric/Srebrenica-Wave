@@ -1,0 +1,57 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+.imgHolder {
+    height: $height-100vh;
+    width: $width-full;
+    background-image: url(../../../assets/book-pivnica.jpg);
+    background-repeat: $background-repeat-no;
+    background-size: $background-size-c;
+    .colorOverlay {
+        background-image: linear-gradient(180deg, #000000 0%, $color-red-1 100%);;
+        opacity: 0.5;
+        height: 100%;
+        width: 100%;
+    }
+    .titleHolder {
+        display: $display-flex;
+        align-items: $align-items-c;
+        justify-content: flex-start;
+        background-color: $color-red-a;
+        width: 22%;
+        height: 15vh;
+        position: relative;
+        bottom: 15vh;
+        left: 500px;
+        div {
+            color: $color-white-regular;
+            position: relative;
+            bottom: 2vh;
+            left: 2em;
+            h1 {
+                color: white;
+                font-size: $font-size-xl;
+                opacity: 1;
+                font-weight: bold
+            };
+        };
+    };
+   
+};
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+    justify-content: space-around;
+    div {
+        padding: 20px 0px;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        margin-bottom: 5px;
+        align-items: flex-start;
+        // text-align: center;
+    }
+}

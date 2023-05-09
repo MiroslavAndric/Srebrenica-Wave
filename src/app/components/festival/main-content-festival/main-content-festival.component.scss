@@ -5,23 +5,15 @@
     height: 10vh;
     background-color: $color-orange-2;
     div {
-        display: $display-flex;
-        justify-content: $justify-content-S-A;
-        align-items: $align-items-c;
+        @include display-align-justify($display-flex, $align-items-c, $justify-content-S-A);
         h1 {
-            font-size: $font-size-xl;
-            line-height: 2.4em;
-            letter-spacing: 1.2px;
-            color: $color-white-regular;
-        }
-
-}
-}
+            @include font-lineH-letterS-color($font-size-xl, 2.4em, 1.2px, $color-white-regular);
+        };
+    };
+};
 .descriptionTab {
-    display: $display-flex;
-    flex-direction: $flex-direction-c;
+    @include display-direction-align($display-flex, $flex-direction-c, $align-items-c);
     justify-content: $justify-content-c;
-    align-items: $align-items-c;
     width: $width-full;
     background-color:$color-white-gray ;
     padding: 2em 0em;
@@ -31,18 +23,13 @@
         width: $width-half;
         text-align: $text-align-c; 
         margin-bottom: 1em;
-        color: $color-white-regular;
-        font-size: $font-size-m;
-
-        
-    }
-}
+        @include font-size-and-color($font-size-m, $color-white-regular);  
+    };
+};
 .additionalInfo {
     width: $width-full;
     background-color: $color-orange-2;
-    display: $display-flex;
-    align-items: $align-items-c;
-    justify-content: $justify-content-c;
+    @include display-align-justify($display-flex, $align-items-c, $justify-content-c);
     padding:5em 0em;
     
     div {
@@ -50,26 +37,21 @@
         flex-direction: $flex-direction-c;
         width: 25%;
         background-color: $color-white-gray;
-         padding: 30px 60px 30px 60px;
+         padding: $padding-box;
          height: 45vh;
 
         h1 {
-            font-size: $font-size-xl;
-            line-height: 2.4em;
-            letter-spacing: 1.2px;
-            color: $color-white-regular;
-            margin-top: 1em;
-        }
+            @include font-lineH-letterS-color($font-size-xl, 2.4em, 1.2px, $color-white-regular);
+        };
         h2 {
             margin-bottom: 1em;
             color: $color-white-regular;
-        }
+        };
         p {
 
             justify-content: $justify-content-c;
             align-items: $align-items-c;
-            color: $color-white-regular;
-            font-size: $font-size-m;
-        }
-    }
-}
+            @include font-size-and-color($font-size-m,$color-white-regular);
+        };
+    };
+};

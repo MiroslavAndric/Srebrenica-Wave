@@ -28,6 +28,8 @@ import { MainContentAboutComponent } from './components/about/main-content-about
 import { HeaderAlleventsComponent } from './components/allevents/header-allevents/header-allevents.component';
 import MainContentAlleventsComponent from './components/allevents/main-content-allevents/main-content-allevents.component';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
+import { PerformInPivnicaComponent } from './components/perform-in-pivnica/perform-in-pivnica.component';
+import { BookPivnicaComponent } from './components/book-pivnica/book-pivnica.component';
 
 const routes: Routes = [
   {
@@ -64,6 +66,14 @@ const routes: Routes = [
     component: ContactsComponent
   },
   {
+    path: 'sviraj-i-ti',
+    component: PerformInPivnicaComponent
+  },
+  {
+    path: 'bookiraj-pivnicu',
+    component: BookPivnicaComponent
+  },
+  {
     path: '**',
     component: NotFoundComponent
   }
@@ -94,6 +104,8 @@ const routes: Routes = [
     HeaderAlleventsComponent,
     MainContentAlleventsComponent,
     ScrollToTopComponent,
+    PerformInPivnicaComponent,
+    BookPivnicaComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,36 +1,27 @@
 @import '../../../../assets/scss/variables';
 @import '../../../../assets/scss/mixins';
 .imgHolder {
-    height: $height-100vh;
     width: $width-full;
     background-image: url(../../../../assets/band_audience.jpg);
-    background-repeat: $background-repeat-no;
-    background-size: $background-size-c;
+    @include bck-repeat-bck-size-and-height($background-repeat-no, $background-size-c, $height-100vh);
     .colorOverlay {
         background-color: transparent;
         height: 100%;
         width: 100%;
     }
     .titleHolder {
-        display: $display-flex;
-        align-items: $align-items-c;
-        justify-content: flex-start;
+        @include display-align-justify($display-flex, $align-items-c, flex-start);
         background-color: $color-orange-a;
-        width: 22%;
-        height: 15vh;
-        position: relative;
-        bottom: 15vh;
-        left: 500px;
+        @include width-height-pos-bott-left($width-22, $height-15vh, relative, 15vh, 500px);
         div {
             color: $color-white-regular;
             position: relative;
             bottom: 2vh;
             left: 2em;
             h1 {
-                color: white;
-                font-size: $font-size-xl;
+                @include font-size-and-color($font-size-xl, $color-white-regular);
                 opacity: 1;
-                font-weight: bold
+                font-weight: $font-weight-bold;
             }
         }
     };

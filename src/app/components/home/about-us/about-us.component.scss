@@ -22,28 +22,22 @@
         justify-content: $justify-content-S-A;
         padding-top: $padding-top-l;
 
-    }
+    };
     button {
-        border-radius: $border-radius-5px;
         cursor: pointer;
         &.__more {
-            @include font-size-and-color($font-size-m, $color-white-regular);
-            @include weight-lineHeight-bckColor($font-weight-m,$line-height-m, $color-blue-2);
-            padding: $padding-button;
+            @include buttons;
             &:hover {
-                @include weight-lineHeight-bckColor($font-weight-bold, normal, $color-blue-1 );
-                }
-        }
+                @include buttonHover($color-blue-2)
+            };
+            
+        };
         &.__events {
-            @include font-size-and-color($font-size-m, $color-white-regular);
-            margin-left: $margin-left-m;
-            @include weight-lineHeight-bckColor($font-weight-m, $line-height-m, $color-blue-1);
-            padding: $padding-button;
+            @include buttons;
             &:hover {
-                @include weight-lineHeight-bckColor($font-weight-bold, normal, $color-blue-2 );
-                }
-        }
-        
-    }
+                @include buttonHover ($color-blue-1);
+             };
+        } ;  
+    };
     
-}
+};

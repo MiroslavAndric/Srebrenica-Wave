@@ -14,8 +14,8 @@
         text-decoration: none;
         &:hover {
             font-size: 27px;
-        }
-    }
+        };
+    };
     
     ul {
         list-style-type: none;
@@ -36,7 +36,7 @@
                 &:hover {
                     font-size: 18px;
                     color:white;
-                }
+                };
                 &::after {
                     content: '';
                     height: 3px;
@@ -48,19 +48,19 @@
                     width: 100%;
                     transition:  all ease-in-out 300ms;
                     transform: scaleX(0);
-                }
+                };
                 &:hover::after {
                     opacity: 1;
                     transform: scaleX(1);
-                }
+                };
               
-            }
+            };
 
-        }
-    }
+        };
+    };
 
-}
+};
 .navbar-inverse {
     background-color: rgba(0,0,0,0.4);
     z-index: 5;
-}
+};
