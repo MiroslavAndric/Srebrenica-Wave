@@ -34,3 +34,34 @@
         };
     };
 };
+
+.events-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 20px 0px;
+    &__events {
+        display: flex;
+        width: 70%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: stretch;
+        justify-content: space-evenly;
+        &--items{
+            // width: 48%;
+            // border: 2px solid black;
+            }
+
+            
+           
+    
+            }
+           
+        
+        
+}
+
+

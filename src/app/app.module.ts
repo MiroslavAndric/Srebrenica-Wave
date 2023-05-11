@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
@@ -26,11 +27,12 @@ import { MainContentFestivalComponent } from './components/festival/main-content
 import { HederInfoContainerComponent } from './components/about/heder-info-container/heder-info-container.component';
 import { MainContentAboutComponent } from './components/about/main-content-about/main-content-about.component';
 import { HeaderAlleventsComponent } from './components/allevents/header-allevents/header-allevents.component';
-import MainContentAlleventsComponent from './components/allevents/main-content-allevents/main-content-allevents.component';
+import {MainContentAlleventsComponent} from './components/allevents/main-content-allevents/main-content-allevents.component';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 import { PerformInPivnicaComponent } from './components/perform-in-pivnica/perform-in-pivnica.component';
 import { BookPivnicaComponent } from './components/book-pivnica/book-pivnica.component';
 import { FormsModule } from '@angular/forms';
+import { SingleEventComponent } from './components/allevents/single-event/single-event.component';
 const routes: Routes = [
   {
     path: '',
@@ -106,11 +108,14 @@ const routes: Routes = [
     ScrollToTopComponent,
     PerformInPivnicaComponent,
     BookPivnicaComponent,
+    SingleEventComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'}),
-    FormsModule
+    FormsModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

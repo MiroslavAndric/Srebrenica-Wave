@@ -1,0 +1,12 @@
+<div class="events">
+    <img [src]="'assets/events-img/' +image + '.png'" [alt]="title">
+    <h2 class="title">{{title}}</h2>
+    <p class="description">{{description}}</p>
+    <div class="rating">
+        <p
+            *ngFor="let number of [1,2,3,4,5]"
+            [ngClass]="number <= rating ? 'rating__full': 'rating__empty' "
+        >&#9733;
+    </p>
+    </div>
+</div>

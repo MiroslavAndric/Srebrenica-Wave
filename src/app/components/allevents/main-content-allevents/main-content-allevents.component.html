@@ -14,3 +14,16 @@
     <h1>Prethodni događaji</h1>
     </div>
 </div>
+<div class="events-container">
+    <div class="events-container__events">
+        <app-single-event *ngFor="let event of events"
+        class="events-container__events--items"
+            [image]="event.image"
+            [title]="event.title"
+            [description]="event.description"
+            [rating]="event.rating"
+        >
+            
+        </app-single-event>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+[
+    {   
+        "id":1,
+        "image": "event1",
+        "title": "Srebrenica Wave Fest",
+        "description": "Peti po redu Srebrenica Wave Festival Vas ceka!",
+        "rating": 5
+    },
+    {   
+        "id":2,
+        "image": "event2",
+        "title": "Novembar Fest",
+        "description": "Peti po redu Srebrenica Wave Festival Vas ceka!",
+        "rating": 3
+    },
+    {   
+        "id":3,
+        "image": "event3",
+        "title": "Novembar Fest",
+        "description": "Peti po redu Srebrenica Wave Festival Vas ceka!",
+        "rating": 4
+    },
+    {   
+        "id":4,
+        "image": "event4",
+        "title": "Novembar Fest",
+        "description": "Peti po redu Srebrenica Wave Festival Vas ceka!",
+        "rating": 5
+    }
+]
