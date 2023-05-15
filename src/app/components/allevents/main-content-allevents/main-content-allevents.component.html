@@ -8,8 +8,21 @@
     <div class="singleInput"></div>
 </div>
 </div>
-
+<div class="events-container">
+    <div class="events-container__events">
+        <app-previous-events *ngFor="let event of previousEvents"
+        class="events-container__events--items"
+            [image]="event.image"
+            [title]="event.title"
+            [description]="event.description"
+            
+        >
+            
+        </app-previous-events>
+    </div>
+</div>
 <div class="previousEvents">
+    
     <div>
     <h1>Prethodni događaji</h1>
     </div>

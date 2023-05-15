@@ -30,9 +30,10 @@ import { HeaderAlleventsComponent } from './components/allevents/header-allevent
 import {MainContentAlleventsComponent} from './components/allevents/main-content-allevents/main-content-allevents.component';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 import { PerformInPivnicaComponent } from './components/perform-in-pivnica/perform-in-pivnica.component';
-import { BookPivnicaComponent } from './components/book-pivnica/book-pivnica.component';
-import { FormsModule } from '@angular/forms';
+import {BookPivnicaComponent} from './components/book-pivnica/book-pivnica.component';
+import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SingleEventComponent } from './components/allevents/single-event/single-event.component';
+import { PreviousEventsComponent } from './components/allevents/previous-events/previous-events.component';
 const routes: Routes = [
   {
     path: '',
@@ -108,13 +109,16 @@ const routes: Routes = [
     ScrollToTopComponent,
     PerformInPivnicaComponent,
     BookPivnicaComponent,
-    SingleEventComponent
+    SingleEventComponent,
+    PreviousEventsComponent,
+   
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'}),
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
 
   ],
   providers: [],

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import {BookPivnicaComponent} from './book-pivnica.component';
+import { PreviousEventsComponent } from './previous-events.component';
 
-describe('BookPivnicaComponent', () => {
-  let component: BookPivnicaComponent;
-  let fixture: ComponentFixture<BookPivnicaComponent>;
+describe('PreviousEventsComponent', () => {
+  let component: PreviousEventsComponent;
+  let fixture: ComponentFixture<PreviousEventsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BookPivnicaComponent ]
+      declarations: [ PreviousEventsComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(BookPivnicaComponent);
+    fixture = TestBed.createComponent(PreviousEventsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

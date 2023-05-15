@@ -1,0 +1,51 @@
+[
+    {   
+        "id":1,
+        "image": "event1",
+        "title": "Koncert benda tog i togggggg",
+        "description": "U prostoru organizacije Srebrenica Wave prganizujemo koncert!U prostoru organizacije Srebrenica Wave prganizujemo koncertU prostoru organizacije Srebrenica Wave prganizujemo koncertU prostoru organizacije Srebrenica Wave prganizujemo koncertU prostoru organizacije Srebrenica Wave prganizujemo koncert"
+        
+    },
+    {   
+        "id":2,
+        "image": "event2",
+        "title": "Novembar Fest",
+        "description": "U prostoru organizacije Srebrenica Wave prganizujemo koncert!"
+    },
+    {   
+        "id":3,
+        "image": "event3",
+        "title": "Novembar Fest",
+        "description": "Peti po redu Srebrenica Wave Festival Vas ceka!"
+    },
+    {   
+        "id":4,
+        "image": "event4",
+        "title": "Novembar Fest",
+        "description": "Peti po redu Srebrenica Wave Festival Vas ceka!"
+    },
+    {   
+        "id":5,
+        "image": "event5",
+        "title": "Novembar Fest",
+        "description": "Peti po redu Srebrenica Wave Festival Vas ceka!"
+    },
+    {   
+        "id":6,
+        "image": "event6",
+        "title": "Novembar Fest",
+        "description": "Peti po redu Srebrenica Wave Festival Vas ceka!"
+    },
+    {   
+        "id":7,
+        "image": "event7",
+        "title": "Novembar Fest",
+        "description": "Peti po redu Srebrenica Wave Festival Vas ceka!"
+    },
+    {   
+        "id":8,
+        "image": "event8",
+        "title": "Novembar Fest",
+        "description": "Peti po redu Srebrenica Wave Festival Vas ceka!"
+    }
+]

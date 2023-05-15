@@ -16,13 +16,16 @@ export class MainContentAlleventsComponent implements OnInit{
   // };
 
   events: IEvents[] = [];
+  previousEvents: IEvents[] = [];
   constructor(private _eventService: EventsService) {}
 
   ngOnInit():void {
     this._eventService.getEvents().subscribe((data) => {
       this.events = data;
-      console.log(this.events)
     });
+    this._eventService.getPreviousEvents().subscribe((data) =>{
+        this.previousEvents = data;
+    })
   }
  
 };

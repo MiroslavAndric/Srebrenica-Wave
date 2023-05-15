@@ -6,8 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./allevents.component.scss']
 })
 export class AlleventsComponent {
-  // @Input() image:string= '';
-  // @Input() title: string = '';
-  // @Input() description: string = '';
-  // @Input() time: number = 0
+  
 }

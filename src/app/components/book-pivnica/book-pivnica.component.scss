@@ -162,13 +162,51 @@
        
             };
             button {
+                @include weight-lineHeight-bckColor($font-weight-m, $line-height-m, transparent);
+                border-radius: 26px;
+                padding: 15px 30px;
+                @include font-size-and-color($font-size-m, $color-white-regular);
                 margin-top: 20px;
-                padding: 10px 20px;
+                margin-left:5px;
+                cursor: pointer;
                 background-color: $color-red-1;
-                border-radius: $border-radius-5px;
-                color: $color-white-regular;
-                cursor:pointer;
+                    &:hover {
+                    font-weight: bold;
+
+                    }
+                // margin-top: 20px;
+                // padding: 10px 20px;
+                // background-color: $color-red-1;
+                // border-radius: $border-radius-5px;
+                // color: $color-white-regular;
+                // cursor:pointer;
             }
 
 };
 };
+.successMessage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+     p {
+        width: 30%;
+        text-align: center;
+        background-color: $color-red-1;
+        color: $color-white-regular;
+        font-size: $font-size-xl;
+}
+}
+
+input.ng-invalid.ng-touched {
+    border: 2px solid red;
+   
+}
+input.ng-valid {
+    border: 2px solid green;
+}
+span {
+    color:red;
+    padding-top: 5px;
+    margin-left:5px
+}
+

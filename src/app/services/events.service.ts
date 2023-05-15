@@ -14,5 +14,9 @@ export class EventsService {
     return this.http.get<IEvents[]>('assets/data/events.json')
    
   }
+  getPreviousEvents(): Observable<IEvents[]> {
+    return this.http.get<IEvents[]>('assets/data/previous-events.json')
+   
+  }
 }
  
