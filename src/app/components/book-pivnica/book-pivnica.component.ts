@@ -1,5 +1,5 @@
-import { Component,  OnInit,  ViewChild } from '@angular/core';
-import { FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
+import { Component,  OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-book-pivnica',
@@ -34,10 +34,6 @@ ngOnInit() {
 
 constructor() { }
   onClickSubmit(form: FormGroup) {
-    console.log('unutra')
-    // this.submitted = true;
-    // this.event.firstname = this.userform.value.firstname
-    // this.event.lastname = this.userform.value.lastname
     localStorage.setItem('Book-Pivnica-Form', JSON.stringify(form));
     let eventData = localStorage.getItem('Book-Pivnica-Form');
 this.form.reset();

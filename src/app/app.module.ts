@@ -31,7 +31,7 @@ import {MainContentAlleventsComponent} from './components/allevents/main-content
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 import { PerformInPivnicaComponent } from './components/perform-in-pivnica/perform-in-pivnica.component';
 import {BookPivnicaComponent} from './components/book-pivnica/book-pivnica.component';
-import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SingleEventComponent } from './components/allevents/single-event/single-event.component';
 import { PreviousEventsComponent } from './components/allevents/previous-events/previous-events.component';
 const routes: Routes = [

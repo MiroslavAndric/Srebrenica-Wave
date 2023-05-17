@@ -10,21 +10,80 @@
         <p>Na našoj bini do sada su svirali neki od najvećih izvođača iz regiona. 
         Više od 150 izvođača dijelilo je pozornicu Pivnice. Ukoliko im se želite pridružiti, molimo vas da popunite formular. Naš booking team će vas kontaktirati uskoro.</p>
     </div>
-    
-</div>
-<!-- <form action="get">
-    <div class="name">
-        <div class="firstName">
-            <p>Ime *</p>
-            <input type="text" name="text" id="text">
-            <label for="text"></label>
-        </div>
-        <div class="lastName">
-            <p>Prezime *</p>
-            <input type="text" name="text" id="text">
-            <label for="text"></label>
-        </div>
-        
     </div>
-   
-</form> -->
+    
+    <div *ngIf="message" class="successMessage">
+        <p><b>Forma uspjesno poslata.</b> Uskoro ce vas kontaktirati neko iz naseg booking tima!</p>
+    </div>
+
+    <div class="container" >
+        <form action="#" [formGroup]="form" (ngSubmit) = "onClickSubmit(form.value)" >
+            <div class="first_row">
+                <div class="first_line" >
+                    <label for="firstname">Ime <span>*</span></label>
+                    <input  name="firstname" type="text"  id="firstname"  formControlName="firstname">
+                    <span *ngIf="!form.get('firstname')?.valid && form.get('firstname')?.touched ">Unesite validno ime!</span>
+                </div>
+                <div class="first_line">
+                    <label for="lastname">Prezime <span>*</span></label>
+                    <input name="lastname" type="text"  id="lastname" formControlName="lastname">
+                    <span *ngIf="!form.get('lastname')?.valid && form.get('lastname')?.touched ">Unesite validno prezime!</span>
+    
+                </div>
+            </div>
+            <div class="second_row">
+                <div class="second_line">
+                    <label for="organization">Ime benda/​izvođača <span>*</span></label>
+                    <input name="organization" type="text"  id="organization" formControlName="organization">
+                    <span *ngIf="!form.get('organization')?.valid && form.get('organization')?.touched ">Unesite ime Vase organizacije!</span>
+    
+                </div>
+            </div>
+            <div class="first_row">
+                <div class="first_line">
+                    <label for="telephone">Telefon <span>*</span></label>
+                    <input name="telephone" type="tel"  id="telephone" formControlName="telephone">
+                    <span *ngIf="!form.get('telephone')?.valid && form.get('telephone')?.touched ">Unesite broj telefona!</span>
+    
+                </div>
+                <div class="first_line">
+                    <label for="email">E-mail <span>*</span></label>
+                    <input name="email" type="email"  id="email" formControlName="email">
+                    <span *ngIf="!form.get('email')?.valid && form.get('email')?.touched ">Unesite validan E-mail!</span>
+    
+                </div>
+            </div>
+            <div class="forth_row">
+                <div class="forth_line">
+                    <label for="area">Kratka biografija benda <span>*</span></label>
+                    <textarea id="area" name="area" rows="4" cols="50" formControlName="area"></textarea>
+                    <span *ngIf="!form.get('area')?.valid && form.get('area')?.touched ">Unesite kratku biografiju benda!</span>
+    
+                </div>
+            </div>
+            <div class="fifth_row">
+                <div class="fifth_line">
+                    <label for="datestart">Početni datum vašeg događaja<span>*</span></label>
+                    <input type="date" name="datestart" id="datestart" formControlName="datestart">
+                    <span *ngIf="!form.get('datestart')?.valid && form.get('datestart')?.touched ">Unesite pocetni datum aktivnosti!</span>
+    
+                </div>
+                <div class="fifth_line">
+                    <label for="dateend">Završni datum vašeg događaja<span>*</span></label>
+                    <input type="date" name="dateend" id="dateend" formControlName="dateend">
+                    <span *ngIf="!form.get('dateend')?.valid && form.get('dateend')?.touched ">Unesite zavrsni datum aktivnosti!</span>
+    
+                </div>
+            </div>
+            <div class="sixth_row">
+                <div class="sixth_line">
+                    <label for="Link">Link na nastup/​audio (ukoliko postoji)</label>
+                    <input type="text" name="Link" id="Link" formControlName="Link">
+                </div>
+            </div>
+            <!-- <button type="button" (click)="resetUserForm(userform)">Posalji</button> -->
+             <button [disabled]="!form.valid"  [ngClass]="addClass? 'graybtn' : ''"  type="submit" >
+                
+                Posalji</button>
+        </form> 
+    </div>

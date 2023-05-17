@@ -1,5 +1,4 @@
 .events {
-    display: flex;
     .title {
         text-align: center;
     
@@ -7,6 +6,7 @@
     .description {
         font-size: 15px;
         text-align: center;
+        padding: 10px 0px;
     }
     .rating {
         display: flex;
