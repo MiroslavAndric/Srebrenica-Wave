@@ -34,6 +34,7 @@ import {BookPivnicaComponent} from './components/book-pivnica/book-pivnica.compo
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SingleEventComponent } from './components/allevents/single-event/single-event.component';
 import { PreviousEventsComponent } from './components/allevents/previous-events/previous-events.component';
+import { SingleEventHomeComponent } from './components/home/events/single-event-home/single-event-home.component';
 const routes: Routes = [
   {
     path: '',
@@ -111,6 +112,7 @@ const routes: Routes = [
     BookPivnicaComponent,
     SingleEventComponent,
     PreviousEventsComponent,
+    SingleEventHomeComponent,
    
   ],
   imports: [

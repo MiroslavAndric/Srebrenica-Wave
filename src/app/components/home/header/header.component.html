@@ -1,7 +1,10 @@
 <div class="header" (scroll)="onWindowScroll()" >
     <a routerLink="/home" >Srebrenica Wave</a>
+ 
     <div class="nav">
-        <ul>
+        
+        <ul class="menu">
+          
             <li><a routerLink="/o-nama">O nama</a></li>
             <!-- <li><a routerLink="/info-point">Info point</a></li> -->
             <li><a routerLink="/pivnica">Pivnica</a></li>
@@ -9,6 +12,20 @@
             <li><a routerLink="/dogadjaji">Događaji</a></li>
             <li><a routerLink="/kontakt">Kontakt</a></li>
         </ul>
+      
     </div>
+    <button class="hamburger" (click)="clickEvent()" [ngClass]="status ? 'is-active' : ''">
+        <div class="bar" ></div>
+    </button>
+    <div class="mobile-nav" (click)="clickEvent()" [ngClass]="status ? 'is-active' : ''">
+		<li><a routerLink="/o-nama">O nama</a></li>
+            <!-- <li><a routerLink="/info-point">Info point</a></li> -->
+            <li><a routerLink="/pivnica">Pivnica</a></li>
+            <li><a routerLink="/festival">Festival</a></li>
+            <li><a routerLink="/dogadjaji">Događaji</a></li>
+            <li><a routerLink="/kontakt">Kontakt</a></li>
+	</div>
+   
+       
 </div>
 

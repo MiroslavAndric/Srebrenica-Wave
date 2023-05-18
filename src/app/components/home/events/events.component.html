@@ -1,8 +1,16 @@
 <div class="inputs">
-    <h1>Nadolazeći događaji</h1>
-    <div class="singleInput"></div>
-    <div class="singleInput"></div>
-    <div class="singleInput"></div>
+    <h1>Nadolazeci dogadjaji</h1>
+    <div class="events-container__events">
+    <app-single-event-home *ngFor="let event of events"
+    class="events-container__events--items"
+        [title]="event.title"
+        [description]="event.description"
+        [date]="event.date"
+    >
+        
+    </app-single-event-home>
+    </div>
     <a routerLink="/dogadjaji"><button class="allEvents">Svi događaji <i class="fa fa-calendar" aria-hidden="true"></i></button></a>
     <img src="../.././../../assets/SrebrenicaWave_Favicon.png" alt="">
 </div>
+

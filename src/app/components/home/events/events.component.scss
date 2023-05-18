@@ -7,22 +7,18 @@
     background-position: center;
     user-select: none;
     h1 {
-        padding-top: 80px;
-        color: #a7afb8;
+        font-size: $font-size-xl;
+        margin-top: 80px;
+        color: $color-white-regular;
     }
     img {
         filter: invert(98%) sepia(0%) saturate(100%) hue-rotate(130deg) brightness(150%) contrast(30%);
         position: relative;
-        top: 60px;
+        // top: 50px;
+        bottom: 20px;
+        max-height: 45vh
     }
-    .singleInput {
-        border-radius: $border-radius-5px;
-        margin-top: 40px;
-        width: $width-half;
-        height: 30px;
-        color: $color-white-regular;
-        border: 2px solid white;
-    }
+
     .allEvents {
         @include buttons;
         &:hover {
@@ -31,7 +27,40 @@
             outline-offset: 2px;
         }
     }
-    img {
-        margin-bottom: 5px;
+    // img {
+    //     margin-bottom: 5px;
+    // }
+    .events-container__events{
+        color: $color-white-regular;
+        font-size: $font-size-m;
+        margin: 100px;
+        display: flex;
+        width: 70%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        /* justify-content: flex-start; */
+        text-align: center;
+        &--items {
+            padding: 20px;
+        border: 1px solid $color-white-regular;
+            &:first-child {
+                border-radius: 26px 0px 0px 26px;
+            }
+            &:last-child {
+                border-radius: 0px 26px 26px 0px;
+            }
+
+
+            h2 {
+                margin-bottom: 20px;
+            }
+        }
+    
     }
 }
+
+
+
+
+
