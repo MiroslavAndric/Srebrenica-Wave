@@ -17,7 +17,6 @@
             color: $color-white-regular;
             position: relative;
             bottom: 2vh;
-            left: 2em;
             h1 {
                 @include font-size-and-color($font-size-xl, $color-white-regular);
                 opacity: 1;
@@ -26,4 +25,29 @@
         }
     };
    
+}
+
+@media screen and  (max-width: 1300px) {
+    .imgHolder {
+        background-position: center center;
+    }
+    .imgHolder .titleHolder {
+        width: 40%;
+        position: relative;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+}
+
+
+@media screen and  (max-width: 930px) {
+    .imgHolder .titleHolder {
+        width: 100%;
+      
+
+    }
+  
+  
 }

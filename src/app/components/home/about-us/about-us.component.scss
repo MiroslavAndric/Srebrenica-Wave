@@ -1,12 +1,18 @@
 @import '../../../../assets/scss/variables';
 @import '../../../../assets/scss/mixins';
-.aboutUs {
+.aboutUs { 
+    height: $height-95vh;
+    
+.bckimg {
     @include display-direction-align($display-flex, $flex-direction-c, $align-items-c);
-    @include bck-repeat-bck-size-and-height($background-repeat-no, $background-size-c, $height-95vh);
+  
+    @include bck-repeat-bck-size-and-height($background-repeat-no, $background-size-c, 100%);
+    width: 100%;
+    justify-content: $justify-content-c;
     background-image: url(../../../../assets/ss.png);
+    background-position: center center;
     h1 {
         @include font-size-and-color($font-size-xl,$color-white-regular);
-        margin-top: $margin-top-xl;
         span {
             color: $color-blue-1;
         }
@@ -39,5 +45,29 @@
              };
         } ;  
     };
+    
+};
+};
+
+
+@media screen and (max-width: 900px) {
+    .aboutUs {
+        height: 75vh;
+        .bckimg {
+            background-position: 54% center;
+        }
+    }
+    .aboutUs .bckimg {
+        h1 {
+            font-size: 35px;
+        }
+        p {
+            font-size: 18px;
+            width: 70%;
+
+    
+        }
+    }
+   
     
 };

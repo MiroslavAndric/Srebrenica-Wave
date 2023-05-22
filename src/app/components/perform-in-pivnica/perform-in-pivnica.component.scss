@@ -25,8 +25,6 @@
         div {
             color: $color-white-regular;
             position: relative;
-            bottom: 2vh;
-            left: 2em;
             h1 {
                 color: white;
                 font-size: $font-size-xl;
@@ -54,23 +52,7 @@
         align-items: flex-start;
     }
 }
-// .title {
-//     display: flex;
-//     flex-direction: column;
-//     align-items:center;
-//     width: 100%;
-//     justify-content: space-around;
-//     div {
-//         padding: 20px 0px;
-//         width: 45%;
-//         display: flex;
-//         flex-direction: column;
-//     }
-//     h1 {
-//         margin-bottom: 5px;
-//         align-items: flex-start;
-//     };
-// };
+
 
 
 .container {
@@ -81,7 +63,6 @@
     justify-content: center;
     margin: 20px 0;
     input, textarea {
-        margin: 0px 5px;
         padding: 5px;
     }
     label {
@@ -179,21 +160,16 @@
                 };
        
             };
-            button {
-                @include weight-lineHeight-bckColor($font-weight-m, $line-height-m, transparent);
+            .button {
+                @include weight-lineHeight-bckColor($font-weight-m, $line-height-m, $color-orange-2);
                 border-radius: 26px;
                 padding: 15px 30px;
                 @include font-size-and-color($font-size-m, $color-white-regular);
                 margin-top: 20px;
                 margin-left:5px;
                 cursor: pointer;
-                background-color: $color-red-1;
                 
-                        // .graybtn {
-                        //     background-color: gray;
-                        //     color: green;
-                            
-                        // }
+                    
 
                 &:hover {
                     font-weight: bold;
@@ -201,12 +177,7 @@
                     }
                
                    
-                // margin-top: 20px;
-                // padding: 10px 20px;
-                // background-color: $color-red-1;
-                // border-radius: $border-radius-5px;
-                // color: $color-white-regular;
-                // cursor:pointer;
+              
             }
 
 };
@@ -218,7 +189,7 @@
      p {
         width: 30%;
         text-align: center;
-        background-color: $color-red-1;
+        background-color: $color-orange-2;
         color: $color-white-regular;
         font-size: $font-size-xl;
 }
@@ -236,4 +207,59 @@ span {
     padding-top: 5px;
     margin-left:5px
 }
+
+.graybtn {
+    background-color: gray;
+    color: green;
+    ;
+}
+
+@media screen and  (max-width: 1300px) {
+    .imgHolder .titleHolder {
+        width: 40%;
+        position: relative;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+}
+
+
+@media screen and  (max-width: 930px) {
+    .imgHolder .titleHolder {
+        width: 100%;
+      
+
+    }
+    .title div {
+        width: 70%;
+    }
+    .container form {
+        width: 70%;
+        
+    }
+    .successMessage p {
+        width: 70%;
+    }
+}
+
+@media screen and  (max-width: 530px) {
+    
+    .title div {
+        text-align: center;
+        width: 90%;
+        h1 {
+            display: none;
+        }
+    }
+    .container form {
+        width: 90%;
+        
+    }
+    .successMessage p {
+        width: 90%;
+    }
+}
+
 

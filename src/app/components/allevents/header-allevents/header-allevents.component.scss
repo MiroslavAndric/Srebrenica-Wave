@@ -4,6 +4,7 @@
     @include bck-repeat-bck-size-and-height($background-repeat-no, $background-size-c, $height-100vh);
     width: $width-full;
     background-image: url(../../../../assets/mixerpng.png);
+    background-position: center center;
     .colorOverlay {
         background-color: transparent;
         filter: invert(98%) sepia(0%) saturate(100%) hue-rotate(130deg) brightness(150%) contrast(30%);
@@ -14,15 +15,34 @@
         display: $display-flex;
         align-items: $align-items-c;
         background-color: $color-red-a;
+        justify-content: space-around;
         div {
             color: $color-white-regular;
             position: relative;
-            bottom: 2vh;
-            left: 2em;
             h1 {
                 font-size: $font-size-xl;
             };
         };
     };
    
+}
+
+@media screen and  (max-width: 1300px) {
+    .imgHolder .titleHolder {
+        width: 40%;
+        position: relative;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+}
+
+
+@media screen and  (max-width: 930px) {
+    .imgHolder .titleHolder {
+        width: 100%;
+      
+
+    }
 }

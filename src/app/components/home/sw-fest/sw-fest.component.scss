@@ -2,9 +2,10 @@
 @import '../../../../assets/scss/mixins';
 .aboutFest {
     @include display-direction-align($display-flex, $flex-direction-c, $align-items-c);
-    justify-content: $justify-content-c;
     background-image: url(../../../../assets/band_audience.jpg);
     @include bck-repeat-bck-size-and-height($background-repeat-no, $background-size-c, $height-95vh);
+    justify-content: $justify-content-c;
+
     h1 {
         @include font-size-and-color($font-size-xl, $color-white-regular);
         span {
@@ -16,7 +17,6 @@
         margin-top: $margin-top-m;
         width: $width-half;
         @include items-and-text-align($align-items-c, $text-align-c);
-        // color: $color-white-regular;
     };
     div {
         display: $display-flex;
@@ -40,5 +40,24 @@
         };
         
     };
+    
+};
+
+@media screen and (max-width: 900px) {
+    .aboutFest {
+        height: 75vh;
+            background-position: 54% center;
+            h1 {
+                font-size: 35px;
+            }
+            p {
+                font-size: 18px;
+                width: 70%;
+    
+        
+            }
+        
+    }
+    
     
 };

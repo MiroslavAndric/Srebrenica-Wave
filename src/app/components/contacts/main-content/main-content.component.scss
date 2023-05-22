@@ -14,14 +14,13 @@
 };
 
 .contactForm {
-    @include display-align-justify($display-flex, $align-items-c, flex-start);
+    @include display-align-justify($display-flex, $align-items-c, space-evenly);
     background-color: $color-blue-a;
-    @include width-height-pos-bott-left($width-22, $height-15vh, relative, 15vh, 490px);
+    @include width-height-pos-bott-left(20em, $height-15vh, relative, 15vh, 490px);
     div {
         color: $color-white-regular;
         position: relative;
-        bottom: 2vh;
-        left: 5em;
+       
         h1 {
             font-size: $font-size-xl
         }
@@ -57,3 +56,41 @@
         };
     };
 };
+
+@media screen and  (max-width: 1300px) {
+    .contentHolder {
+        background-position: center center;
+    }
+    .contentHolder .contactForm {
+        width: 40%;
+        position: relative;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+}
+
+
+@media screen and  (max-width: 930px) {
+    .contentHolder .contactForm {
+        width: 100%;
+      
+
+    }
+}
+
+@media screen and  (max-width: 600px) {
+    .contactInfo .contactDetails {
+        display: block;
+        font-size: 1em;
+
+    }
+    .contactInfo .contactDetails .phone ,.contactInfo .contactDetails  .email, .contactInfo .contactDetails .location {
+        font-size: 1em;
+        span {
+            padding: 0.5em 0em;
+            font-size: 1.8rem;
+        }
+    }
+}

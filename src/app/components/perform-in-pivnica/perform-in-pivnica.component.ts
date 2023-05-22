@@ -11,6 +11,8 @@ export class PerformInPivnicaComponent implements OnInit{
   message: boolean = false;
   form!: FormGroup;
   addClass:boolean = true;
+constructor() { }
+
 ngOnInit() {
   this.form = new FormGroup ( {
     firstname: new FormControl(null, Validators.required),
@@ -22,15 +24,10 @@ ngOnInit() {
     datestart: new FormControl('',Validators.required ),
     dateend: new FormControl('',Validators.required),
     Link: new FormControl('',Validators.required),
-  
-  
-  
-  
   });
 };
 
 
-constructor() { }
 
 onClickSubmit(form: FormGroup) {
   localStorage.setItem('Book-Pivnica-Form', JSON.stringify(form));

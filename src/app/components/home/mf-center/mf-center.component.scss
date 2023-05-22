@@ -3,10 +3,12 @@
 .aboutPivnica {
     @include display-direction-align($display-flex, $flex-direction-c, $align-items-c);
     background-image: url(../../../../assets/mixerpng.png);
+    justify-content: $justify-content-c;
+
     @include bck-repeat-bck-size-and-height($background-repeat-no, $background-size-c, $height-95vh);
     h1 {
         @include font-size-and-color($font-size-xl, $color-white-regular);
-        margin-top: $margin-top-xl;
+        text-align: center;
 
         span {
             color:$color-red-1;
@@ -45,4 +47,23 @@
       };
     
     };
+};
+
+@media screen and (max-width: 900px) {
+    .aboutPivnica {
+        height: 75vh;
+            background-position: 52% center;
+            h1 {
+                font-size: 35px;
+            }
+            p {
+                font-size: 18px;
+                width: 70%;
+    
+        
+            }
+        
+    }
+    
+    
 };

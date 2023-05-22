@@ -24,10 +24,6 @@ ngOnInit() {
     datestart: new FormControl('',Validators.required ),
     dateend: new FormControl('',Validators.required),
     comment: new FormControl('',Validators.required),
-  
-  
-  
-  
   })
 }
 

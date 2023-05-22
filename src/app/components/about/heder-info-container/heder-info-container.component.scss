@@ -5,22 +5,28 @@
     background: url(../../../../assets/audience.jpg);
     @include bck-repeat-bck-size-and-height($background-repeat-no, $background-size-c, $height-100vh);
     z-index: 10;
+     align-items: flex-end;
+        display: flex;
     .colorOverlay {
         background-image: linear-gradient(180deg, #000000 0%, #055394 100%);
+        position: absolute;
+        top: 0px;
         @include opacity-height-width($opacity-half, $height-full, $width-full);
         z-index: 0;
     }
     .titleHolder {
+        padding: 50px;
         @include display-align-justify($display-flex, $align-items-c, flex-start);
         background-color: $color-blue-a;
-        padding: $padding-top-l;
+        // padding: $padding-top-l;
         border-radius: $border-radius-title-holder;
-        @include width-height-pos-bott-left($width-30,60vh, relative, 60vh, 300px);
+        @include width-height-pos-bott-left($width-40,auto, relative, 0vh, 20%);
+           
+    
         div {
             @include display-direction-align($display-flex, $flex-direction-c, $align-items-s);
             color: $color-white-regular;
             position: relative;
-            bottom: 2vh;
             h1 {
                 margin-bottom: 20px;
                 font-size: $font-size-xl;
@@ -35,3 +41,40 @@
     };
    
 }
+@media only screen and (max-width: 1536px) {
+    .imgHolder {
+        background-position: 51%;
+    
+    .titleHolder {
+        width: 50%;
+    }
+}
+}
+@media only screen and (max-width: 960px) {
+    .imgHolder .titleHolder {
+        width: 70%;
+        position: relative;
+        left: 0;
+        
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .imgHolder .titleHolder {
+        width: 100%;
+    }
+}
+// @media only screen and (max-width: 490px) {
+//     .imgHolder .titleHolder {
+//         padding: 25px;
+//         height: auto;
+//         bottom: 340px;
+//     }
+//     .imgHolder .titleHolder div p {
+//         margin-top: 9px;
+//         font-size: 16px;
+//     }
+//     .imgHolder .titleHolder div h1 {
+//        font-size: 25px;
+//     }
+// }

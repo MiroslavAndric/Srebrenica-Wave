@@ -59,11 +59,10 @@
     outline: var(--outline);
     border: var(--outline);
     outline-offset: -2px;
-    transition: outline-offset 200ms ease;
+    transition: outline-offset 100ms ease in out;
 }
 @mixin buttonHover ($bckColor) {
     background-color: $bckColor;
     outline: var(--outline);
     outline-offset: 2px;
-    font-weight: bold;
 }
