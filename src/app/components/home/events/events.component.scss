@@ -33,7 +33,6 @@
         font-size: $font-size-m;
         margin: 100px;
         display: flex;
-        // width: 90%;
         flex-direction: row;
         flex-wrap: nowrap;
         align-content: stretch;
@@ -60,6 +59,7 @@
 
 @media screen and (max-width: 900px) {
     .inputs .events-container__events {
+        width: 90%;
         flex-direction: column;
         &--items {
             &:first-child {
