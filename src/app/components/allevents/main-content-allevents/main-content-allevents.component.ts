@@ -8,12 +8,7 @@ import { EventsService } from 'src/app/services/events.service';
   styleUrls: ['./main-content-allevents.component.scss']
 })
 export class MainContentAlleventsComponent implements OnInit{
-  // events: IEvents = {
-  //   image:'bend_audience.jpg',
-  //   title: 'Events',
-  //   description: 'Lista dogadjaja u Pivnici',
-  //   time: 30840
-  // };
+
 
   events: IEvents[] = [];
   previousEvents: IEvents[] = [];

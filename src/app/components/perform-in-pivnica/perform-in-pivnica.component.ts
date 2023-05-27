@@ -1,5 +1,5 @@
 import { Component,  OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, ValidatorFn, Validators } from '@angular/forms';
 
 
 @Component({
@@ -15,7 +15,7 @@ constructor() { }
 
 ngOnInit() {
   this.form = new FormGroup ( {
-    firstname: new FormControl(null, Validators.required),
+    firstname: new FormControl('', [Validators.required, this.noSpaceAllowed as unknown as ValidatorFn]),
     lastname: new FormControl('', Validators.required),
     organization: new FormControl('', Validators.required),
     telephone: new FormControl('', Validators.required),

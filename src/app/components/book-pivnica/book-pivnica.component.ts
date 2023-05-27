@@ -1,5 +1,5 @@
 import { Component,  OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, ValidatorFn, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-book-pivnica',
@@ -8,14 +8,13 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 
 export class BookPivnicaComponent implements OnInit {
-
 message: boolean = false;
   form!: FormGroup;
 
 
 ngOnInit() {
   this.form = new FormGroup ( {
-    firstname: new FormControl(null, Validators.required, ),
+    firstname: new FormControl('', [Validators.required, this.noSpaceAllowed as unknown as ValidatorFn]),
     lastname: new FormControl('', Validators.required),
     organization: new FormControl('', Validators.required),
     telephone: new FormControl('', Validators.required),
@@ -46,9 +45,10 @@ this.form.reset();
    noSpaceAllowed(control: FormControl) {
      if(control.value != null && control.value.indexOf(' ')!= -1) {
       return {noSpaceAllowed: true}
-     }
+     } else 
      return null;
    }
-   
+ 
+
   };
 

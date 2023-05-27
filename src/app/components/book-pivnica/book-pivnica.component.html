@@ -19,7 +19,7 @@
         <div class="first_row">
             <div class="first_line" >
                 <label for="firstname">Ime <span>*</span></label>
-                <input  name="firstname" type="text"  id="firstname"  formControlName="firstname">
+                <input  name="firstname" type="text"  id="firstname"  formControlName="firstname" >
                 <span *ngIf="!form.get('firstname')?.valid && form.get('firstname')?.touched ">Unesite validno ime!</span>
             </div>
             <div class="first_line">
