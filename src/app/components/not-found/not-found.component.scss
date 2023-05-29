@@ -2,11 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700");
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
 
 body{
   overflow:hidden;
@@ -19,9 +14,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Poppins", sans-serif;
   position: relative;
-  // left:6vmin;
   text-align: center;
 }
 
@@ -133,7 +126,6 @@ h1{
 .goHome {
     position: relative;
     margin: auto;
-    // left:45%;
     display: flex;
     align-items: center;
     justify-content: center;

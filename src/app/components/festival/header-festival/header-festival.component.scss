@@ -10,7 +10,7 @@
         width: 100%;
     }
     .titleHolder {
-        @include display-align-justify($display-flex, $align-items-c, flex-start);
+        @include display-align-justify($display-flex, $align-items-c, space-evenly);
         background-color: $color-orange-a;
         @include width-height-pos-bott-left($width-22, $height-15vh, relative, 15vh, 500px);
         div {
