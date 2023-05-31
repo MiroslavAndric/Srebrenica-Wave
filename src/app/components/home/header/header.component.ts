@@ -7,7 +7,6 @@ import { HostListener } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent  {
-  // isClicked:boolean = false;
   isMenuOpen:boolean = false;
   status: boolean = false;
   toggleMenu(): void {
@@ -16,10 +15,7 @@ export class HeaderComponent  {
   clickEvent(): void{
     this.status = !this.status;       
 }
-// bottomLine(): void {
-  
-//   this.isClicked = !this.isClicked;
-// }
+
 
   @HostListener('window:scroll', ['$event'])
   
